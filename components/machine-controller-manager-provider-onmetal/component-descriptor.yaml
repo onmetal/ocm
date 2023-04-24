@@ -1,0 +1,24 @@
+meta:
+  schemaVersion: v2
+component:
+  componentReferences: []
+  name: github.com/onmetal/machine-controller-manager-provider-onmetal
+  provider: internal
+  repositoryContexts:
+  - baseUrl: ghcr.io/onmetal/ocm
+    type: ociRegistry
+  resources: []
+  sources:
+    - name: github_com_onmetal_machine_controller_manager_provider_onmetal
+      access:
+        type: github
+        repoUrl: github.com/onmetal/machine-controller-manager-provider-onmetal
+        ref: refs/tags/v0.1.2
+      version: v0.1.2
+      extraIdentity: { }
+      type: git
+      labels:
+        - name: cloud.gardener/cicd/source
+          value:
+            repository-classification: main
+  version: v0.1.2

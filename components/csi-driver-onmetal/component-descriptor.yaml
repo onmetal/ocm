@@ -1,0 +1,24 @@
+meta:
+  schemaVersion: v2
+component:
+  componentReferences: []
+  name: github.com/onmetal/csi-driver-onmetal
+  provider: internal
+  repositoryContexts:
+  - baseUrl: ghcr.io/onmetal/ocm
+    type: ociRegistry
+  resources: []
+  sources:
+    - name: github_com_onmetal_csi_driver_onmetal
+      access:
+        type: github
+        repoUrl: github.com/onmetal/csi-driver-onmetal
+        ref: refs/tags/v0.1.3
+      version: v0.1.3
+      extraIdentity: { }
+      type: git
+      labels:
+        - name: cloud.gardener/cicd/source
+          value:
+            repository-classification: main
+  version: v0.1.3
