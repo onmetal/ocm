@@ -15,7 +15,7 @@ for component_dir in "${repo_root_dir}"/components/*/; do
   echo "Found ${version} for component '${component_name}'"
 
   # download the image vector if available
-  url="https://raw.githubusercontent.com/onmetal/${component_name}/main/charts/images.yaml?ref=${version}"
+  url="https://raw.githubusercontent.com/onmetal/${component_name}/${version}/charts/images.yaml"
   component_chart_dir="${repo_root_dir}/gen/${component_name}/charts"
   component_image_vector_file="${component_chart_dir}/images.yaml"
   mkdir -p "${component_chart_dir}"
