@@ -30,7 +30,7 @@ component:
   - componentName: github.com/onmetal/cloud-provider-onmetal
     digest: null
     extraIdentity:
-      imagevector-gardener-cloud+tag: v0.1.3
+      imagevector-gardener-cloud+tag: v0.1.0
     labels:
       - name: imagevector.gardener.cloud/images
         value:
@@ -49,13 +49,13 @@ component:
               resourceId:
                 name: cloud-provider-onmetal
               sourceRepository: github.com/onmetal/cloud-provider-onmetal
-              tag: v0.1.3
+              tag: v0.1.0
     name: cloud-provider-onmetal
-    version: v0.1.3
+    version: v0.1.0
   - componentName: github.com/onmetal/csi-driver-onmetal
     digest: null
     extraIdentity:
-      imagevector-gardener-cloud+tag: v0.1.3
+      imagevector-gardener-cloud+tag: v0.1.0
     labels:
       - name: imagevector.gardener.cloud/images
         value:
@@ -74,13 +74,13 @@ component:
               resourceId:
                 name: csi-driver-onmetal
               sourceRepository: github.com/onmetal/csi-driver-onmetal
-              tag: v0.1.3
+              tag: v0.1.0
     name: csi-driver-onmetal
-    version: v0.1.3
+    version: v0.1.0
   - componentName: github.com/onmetal/machine-controller-manager-provider-onmetal
     digest: null
     extraIdentity:
-      imagevector-gardener-cloud+tag: v0.1.3
+      imagevector-gardener-cloud+tag: v0.1.0
     labels:
       - name: imagevector.gardener.cloud/images
         value:
@@ -99,9 +99,9 @@ component:
               resourceId:
                 name: cloud-provider-onmetal
               sourceRepository: github.com/onmetal/machine-controller-manager-provider-onmetal
-              tag: v0.1.2
+              tag: v0.1.0
     name: machine-controller-manager-provider-onmetal
-    version: v0.1.2
+    version: v0.1.0
   name: github.com/onmetal/gardener-extension-provider-onmetal
   provider: internal
   repositoryContexts:
@@ -113,12 +113,12 @@ component:
       access:
         type: github
         repoUrl: github.com/onmetal/gardener-extension-provider-onmetal
-        ref: refs/tags/v0.1.5
-      version: v0.1.5
+        ref: refs/tags/v0.1.0
+      version: v0.1.0
       extraIdentity: { }
       type: git
       labels:
         - name: cloud.gardener/cicd/source
           value:
             repository-classification: main
-  version: v0.1.5
+  version: v0.1.0
