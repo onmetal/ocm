@@ -1,0 +1,37 @@
+name: Update Component Descriptors
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Setup go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: ocm-updater/go.mod
+          cache-dependency-path: ocm-updater/go.sum
+      - name: Check for updates
+        id: update
+        run: |
+          cd ocm-updater
+          go run . ../components/...
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          author: Gardener on Metal Robot <onmetalbot@users.noreply.github.com>
+          committer: Gardener on Metal Robot <onmetalbot@users.noreply.github.com>
+          labels: lifecycle/ocm
+          delete-branch: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ocm/update
+          base: main
+          commit-message: Update component descriptors
+          title: Update component descriptors
+          body: |
+            Update component descriptors

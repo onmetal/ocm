@@ -1,6 +1,6 @@
 component:
   componentReferences: []
-  name: github.com/onmetal/gardener-extension-provider-onmetal
+  name: github.com/onmetal/onmetal-csi-driver
   provider: internal
   repositoryContexts:
   - baseUrl: ghcr.io/onmetal/ocm
@@ -8,16 +8,16 @@ component:
   resources: []
   sources:
   - access:
-      ref: refs/tags/0.1.5
-      repoUrl: github.com/onmetal/gardener-extension-provider-onmetal
+      ref: refs/tags/0.1.3
+      repoUrl: github.com/onmetal/onmetal-csi-driver
       type: github
     labels:
     - name: cloud.gardener/cicd/source
       value:
         repository-classification: main
-    name: github_com_onmetal_gardener_extension_provider_onmetal
+    name: github_com_onmetal_onmetal_csi_driver
     type: git
-    version: 0.1.5
-  version: 0.1.5
+    version: 0.1.3
+  version: 0.1.3
 meta:
   schemaVersion: v2

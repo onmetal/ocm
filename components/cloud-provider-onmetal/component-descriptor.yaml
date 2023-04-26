@@ -1,5 +1,3 @@
-meta:
-  schemaVersion: v2
 component:
   componentReferences: []
   name: github.com/onmetal/cloud-provider-onmetal
@@ -9,16 +7,17 @@ component:
     type: ociRegistry
   resources: []
   sources:
-    - name: github_com_onmetal_cloud_provider_onmetal
-      access:
-        type: github
-        repoUrl: github.com/onmetal/cloud-provider-onmetal
-        ref: refs/tags/v0.1.0
-      version: v0.1.0
-      extraIdentity: { }
-      type: git
-      labels:
-        - name: cloud.gardener/cicd/source
-          value:
-            repository-classification: main
-  version: v0.1.0
+  - access:
+      ref: refs/tags/0.1.3
+      repoUrl: github.com/onmetal/cloud-provider-onmetal
+      type: github
+    labels:
+    - name: cloud.gardener/cicd/source
+      value:
+        repository-classification: main
+    name: github_com_onmetal_cloud_provider_onmetal
+    type: git
+    version: 0.1.3
+  version: 0.1.3
+meta:
+  schemaVersion: v2
