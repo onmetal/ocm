@@ -7,7 +7,7 @@ require (
 	github.com/gardener/component-spec/bindings-go v0.0.92
 	github.com/go-git/go-git/v5 v5.6.1
 	github.com/go-logr/logr v1.2.4
-	github.com/go-logr/zapr v1.2.3
+	github.com/go-logr/zapr v1.2.4
 	github.com/spf13/pflag v1.0.5
 	go.uber.org/zap v1.24.0
 	sigs.k8s.io/yaml v1.3.0
