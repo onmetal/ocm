@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/Masterminds/semver/v3 v3.2.1
-	github.com/gardener/component-spec/bindings-go v0.0.92
+	github.com/gardener/component-spec/bindings-go v0.0.93
 	github.com/go-git/go-git/v5 v5.6.1
 	github.com/go-logr/logr v1.2.4
 	github.com/go-logr/zapr v1.2.4
