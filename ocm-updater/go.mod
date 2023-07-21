@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/Masterminds/semver/v3 v3.2.1
 	github.com/gardener/component-spec/bindings-go v0.0.94
-	github.com/go-git/go-git/v5 v5.7.0
+	github.com/go-git/go-git/v5 v5.8.0
 	github.com/go-logr/logr v1.2.4
 	github.com/go-logr/zapr v1.2.4
 	github.com/spf13/pflag v1.0.5
