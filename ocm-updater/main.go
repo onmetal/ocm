@@ -130,7 +130,7 @@ func updateComponentDescriptor(ctx context.Context, log logr.Logger, gitResolver
 				log.Info("Found new version")
 			}
 			s.Version = latest
-			access.Ref = fmt.Sprintf("refs/tags/%s", latest)
+			access.Ref = fmt.Sprintf("refs/tags/v%s", latest)
 			newAccess, err := v2.NewUnstructured(access)
 			if err != nil {
 				return nil, fmt.Errorf("failed to create new unstructured access object: %w", err)
