@@ -129,7 +129,7 @@ func updateComponentDescriptor(ctx context.Context, log logr.Logger, gitResolver
 			if s.Version != latest {
 				log.Info("Found new version")
 			}
-			s.Version = latest
+			s.Version = fmt.Sprintf("v%s", latest)
 			access.Ref = fmt.Sprintf("refs/tags/v%s", latest)
 			newAccess, err := v2.NewUnstructured(access)
 			if err != nil {
@@ -139,10 +139,11 @@ func updateComponentDescriptor(ctx context.Context, log logr.Logger, gitResolver
 			*s.Access = newAccess
 
 			if access.RepoURL == desc.Name {
-				if desc.Version != latest {
+				latestVersion := fmt.Sprintf("v%s", latest)
+				if desc.Version != latestVersion {
 					log.Info("Updating component descriptor version")
 				}
-				desc.Version = latest
+				desc.Version = latestVersion
 			}
 		default:
 			return nil, fmt.Errorf("access type not supported")
