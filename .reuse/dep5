@@ -1,0 +1,28 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ocm
+Upstream-Contact: OnMetal project
+Source: https://github.com/onmetal/ocm
+
+# --------------------------------------------------
+# source code
+
+Files:
+ .github/dependabot.yml
+ .github/workflows/publish.yml
+ .github/workflows/update.yml
+ .gitignore
+ CODEOWNERS
+ CONTRIBUTING.md
+ Makefile
+ README.md
+ components/cloud-provider-onmetal/component-descriptor.yaml
+ components/gardener-extension-provider-onmetal/component-descriptor.yaml
+ components/machine-controller-manager-provider-onmetal/component-descriptor.yaml
+ components/onmetal-csi-driver/component-descriptor.yaml
+ hack/generate.sh
+ hack/publish.sh
+ ocm-updater/go.mod
+ ocm-updater/go.sum
+ ocm-updater/main.go
+Copyright: 2022 by the OnMetal authors
+License: Apache-2.0
