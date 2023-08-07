@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/onmetal/ocm)](https://api.reuse.software/info/github.com/onmetal/ocm)
+
 # ocm
 
 `ocm` is a GitHub project that streamlines the process of generating and managing component artifacts. 
