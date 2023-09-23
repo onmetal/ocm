@@ -8,7 +8,7 @@ component:
   resources: []
   sources:
   - access:
-      ref: refs/tags/v0.1.6
+      ref: refs/tags/v0.1.7
       repoUrl: github.com/onmetal/machine-controller-manager-provider-onmetal
       type: github
     labels:
@@ -17,7 +17,7 @@ component:
         repository-classification: main
     name: github_com_onmetal_machine_controller_manager_provider_onmetal
     type: git
-    version: v0.1.6
-  version: v0.1.6
+    version: v0.1.7
+  version: v0.1.7
 meta:
   schemaVersion: v2
