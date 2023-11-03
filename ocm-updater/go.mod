@@ -10,7 +10,7 @@ require (
 	github.com/go-logr/zapr v1.2.4
 	github.com/spf13/pflag v1.0.5
 	go.uber.org/zap v1.26.0
-	sigs.k8s.io/yaml v1.3.0
+	sigs.k8s.io/yaml v1.4.0
 )
 
 require (
