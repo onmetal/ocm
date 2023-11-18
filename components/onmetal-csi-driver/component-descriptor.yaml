@@ -8,7 +8,7 @@ component:
   resources: []
   sources:
   - access:
-      ref: refs/tags/v0.2.0
+      ref: refs/tags/v0.2.1
       repoUrl: github.com/onmetal/onmetal-csi-driver
       type: github
     labels:
@@ -17,7 +17,7 @@ component:
         repository-classification: main
     name: github_com_onmetal_onmetal_csi_driver
     type: git
-    version: v0.2.0
-  version: v0.2.0
+    version: v0.2.1
+  version: v0.2.1
 meta:
   schemaVersion: v2
