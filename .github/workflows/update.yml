@@ -22,7 +22,7 @@ jobs:
           cd ocm-updater
           go run . ../components/...
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           author: Gardener on Metal Robot <onmetalbot@users.noreply.github.com>
           committer: Gardener on Metal Robot <onmetalbot@users.noreply.github.com>
